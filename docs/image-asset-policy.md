@@ -39,5 +39,4 @@ For each image, add a short note with:
 
 ## Current Repository State
 
-This repository does not bundle third-party OpenSea images by default. It includes an original SVG cover asset created for the project.
-
+This repository does not bundle third-party OpenSea images by default. The README cover uses a user-provided Obsidian source image for the central scientific cover visual example, plus a generated composite PNG for project presentation.

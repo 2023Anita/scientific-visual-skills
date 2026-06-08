@@ -12,7 +12,7 @@
 
 默认规则：当用户要求“生成图像”时，Skill 会直接调用 ChatGPT 的生图功能；只有用户明确要求“只要提示词”时，才只输出 prompt。
 
-![Scientific Visual Skills cover](assets/scientific-visual-skills-cover.svg)
+![Scientific Visual Skills cover](assets/scientific-visual-skills-cover.png)
 
 ## 项目定位
 
@@ -159,7 +159,8 @@ scientific-visual-skills/
 ├── README.md
 ├── LICENSE
 ├── assets/
-│   ├── scientific-visual-skills-cover.svg
+│   ├── scientific-visual-skills-cover.png
+│   ├── obsidian-scientific-cover-visual.jpg
 │   └── opensea/
 │       └── README.md
 ├── docs/
@@ -188,7 +189,7 @@ scientific-visual-skills/
 - 已记录来源 URL、权利人、许可依据和检查日期。
 - 图片中不包含未经授权的商标、人物肖像或机构标识。
 
-当前仓库默认只包含原创 SVG 封面图，不直接打包第三方 OpenSea 图片。
+当前仓库封面图中间卡片采用用户 Obsidian 资料中的科研封面示例图，作为 `scientific-cover-visual` 的视觉展示；仓库不直接打包第三方 OpenSea 图片。
 
 ## 适合人群
 
@@ -200,4 +201,3 @@ scientific-visual-skills/
 ## 许可协议
 
 MIT License。详见 [LICENSE](LICENSE)。
-

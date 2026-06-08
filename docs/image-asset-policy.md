@@ -40,3 +40,5 @@ For each image, add a short note with:
 ## Current Repository State
 
 This repository does not bundle third-party OpenSea images by default. The README cover uses three user-provided Obsidian source images for the infographic, cover visual, and paper figure examples, plus a generated composite PNG for project presentation.
+
+The `assets/anesthesia-mechanisms/` directory contains original generated demonstration assets created for this repository on 2026-06-08. They are included to document a multi-skill biomedical workflow and should be treated as educational visual examples, not clinical guidance.

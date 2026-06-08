@@ -14,6 +14,24 @@
 
 ![Scientific Visual Skills cover](assets/scientific-visual-skills-cover.png)
 
+## 麻醉机制案例图库
+
+本仓库新增一组麻醉药机制示例图，用同一医学主题展示三套 Skill 如何协同工作：
+
+- `scientific-cover-visual` 负责高冲击封面主视觉。
+- `scientific-infographic` 负责平衡麻醉总览和教学信息图。
+- `scientific-paper-figure` 负责催眠、镇痛、肌松等机制路径图。
+
+核心主题围绕麻醉药的三个问题：
+
+1. 如何让人进入麻醉性无意识状态。
+2. 如何产生镇痛。
+3. 如何产生肌松。
+
+![Anesthesia mechanisms contact sheet](assets/anesthesia-mechanisms/contact-sheet.png)
+
+详细说明见 [Case Study: Anesthesia Mechanisms](docs/anesthesia-mechanisms-case-study.md)。
+
 ## 项目定位
 
 科研图像并不是一个统一任务。
@@ -163,11 +181,23 @@ scientific-visual-skills/
 │   ├── obsidian-scientific-infographic.jpg
 │   ├── obsidian-scientific-cover-visual.jpg
 │   ├── obsidian-scientific-paper-figure.jpg
+│   ├── anesthesia-mechanisms/
+│   │   ├── 01-anesthesia-cover-visual.png
+│   │   ├── 02-balanced-anesthesia-overview.png
+│   │   ├── 03-hypnosis-mechanism.png
+│   │   ├── 04-analgesia-mechanism.png
+│   │   ├── 05-neuromuscular-blockade.png
+│   │   ├── 06-balanced-anesthesia-control-loop.png
+│   │   ├── 07-local-anesthetic-sodium-channel-block.png
+│   │   ├── 08-molecular-targets-to-endpoints.png
+│   │   ├── contact-sheet.png
+│   │   └── README.md
 │   └── opensea/
 │       └── README.md
 ├── docs/
 │   ├── skill-architecture.md
 │   ├── workflow.md
+│   ├── anesthesia-mechanisms-case-study.md
 │   └── image-asset-policy.md
 ├── examples/
 │   └── example-prompts.md

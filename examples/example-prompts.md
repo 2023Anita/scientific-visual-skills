@@ -29,3 +29,30 @@ $scientific-paper-figure
 英文少量标签，16:9，Science 系理性机制配色。
 ```
 
+## Multi-skill Case: Anesthesia Mechanisms
+
+这个案例适合同时调用三套 Skill：先做封面主视觉，再做总览信息图，最后拆成论文机制图。
+
+```text
+$scientific-cover-visual
+$scientific-infographic
+$scientific-paper-figure
+请围绕“麻醉药的机制”生成 6-8 张专业医学科研图。
+核心问题：
+1. 麻醉药如何让人进入麻醉性无意识状态。
+2. 麻醉药如何产生镇痛。
+3. 肌松药如何产生骨骼肌松弛。
+
+图像组合：
+- 一张科研封面主视觉，突出 balanced anesthesia 的三联目标。
+- 一张总览信息图，分为 hypnosis、analgesia、muscle relaxation 三栏。
+- 三张论文机制图，分别解释催眠、镇痛、肌松。
+- 一张平衡麻醉控制回路教学图。
+- 一张分子靶点到临床终点的 Graphical Abstract。
+
+要求：
+- 英文短标签，避免大段文字。
+- 16:9 为主，封面可用 4:5。
+- 不写药物剂量，不给临床处置建议。
+- 不使用真实期刊 logo、医院标识或品牌名。
+```

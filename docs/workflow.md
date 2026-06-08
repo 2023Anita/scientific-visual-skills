@@ -70,3 +70,25 @@ Review against the skill-specific quality gate:
 
 When the first result fails a gate, iterate with one focused correction rather than rewriting the entire prompt.
 
+## Multi-skill Case Workflow
+
+For complex biomedical topics, use the three skills as a small production pipeline instead of forcing all goals into one image.
+
+Example: mechanisms of anesthesia drugs.
+
+```text
+1. scientific-cover-visual
+   -> create the high-impact concept image.
+
+2. scientific-infographic
+   -> map the whole topic into teaching or review modules.
+
+3. scientific-paper-figure
+   -> split each causal mechanism into a publication-style figure.
+```
+
+This keeps SOLID-style responsibility boundaries at the workflow level:
+
+- Cover visuals optimize for impact.
+- Infographics optimize for explanation.
+- Paper figures optimize for causal and structural accuracy.

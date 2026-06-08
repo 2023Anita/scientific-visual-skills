@@ -39,4 +39,4 @@ For each image, add a short note with:
 
 ## Current Repository State
 
-This repository does not bundle third-party OpenSea images by default. The README cover uses a user-provided Obsidian source image for the central scientific cover visual example, plus a generated composite PNG for project presentation.
+This repository does not bundle third-party OpenSea images by default. The README cover uses three user-provided Obsidian source images for the infographic, cover visual, and paper figure examples, plus a generated composite PNG for project presentation.

@@ -45,7 +45,7 @@ Initial release: scientific visual generation skills
 
 ## OpenSea Image Handling
 
-Do not add third-party OpenSea marketplace images unless redistribution rights are confirmed. The current repository includes a composite PNG cover that uses the user-provided Obsidian scientific cover image in the center card, plus a reserved `assets/opensea/` folder with rights documentation requirements.
+Do not add third-party OpenSea marketplace images unless redistribution rights are confirmed. The current repository includes a composite PNG cover that uses user-provided Obsidian scientific visual images in all three cards, plus a reserved `assets/opensea/` folder with rights documentation requirements.
 
 If approved OpenSea images are added later, document each asset with:
 

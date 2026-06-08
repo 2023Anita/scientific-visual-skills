@@ -160,7 +160,9 @@ scientific-visual-skills/
 ├── LICENSE
 ├── assets/
 │   ├── scientific-visual-skills-cover.png
+│   ├── obsidian-scientific-infographic.jpg
 │   ├── obsidian-scientific-cover-visual.jpg
+│   ├── obsidian-scientific-paper-figure.jpg
 │   └── opensea/
 │       └── README.md
 ├── docs/
@@ -189,7 +191,7 @@ scientific-visual-skills/
 - 已记录来源 URL、权利人、许可依据和检查日期。
 - 图片中不包含未经授权的商标、人物肖像或机构标识。
 
-当前仓库封面图中间卡片采用用户 Obsidian 资料中的科研封面示例图，作为 `scientific-cover-visual` 的视觉展示；仓库不直接打包第三方 OpenSea 图片。
+当前仓库封面图采用用户 Obsidian 资料中的三张科研视觉示例图，分别对应 `scientific-infographic`、`scientific-cover-visual` 和 `scientific-paper-figure`；仓库不直接打包第三方 OpenSea 图片。
 
 ## 适合人群
 

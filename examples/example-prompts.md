@@ -56,3 +56,23 @@ $scientific-paper-figure
 - 不写药物剂量，不给临床处置建议。
 - 不使用真实期刊 logo、医院标识或品牌名。
 ```
+
+## Clinical Education Use Case: Emergency Trauma Workflow
+
+这个案例适合把脱敏后的急诊创伤教学提纲转成教学流程图。输出只用于教育可视化，不是临床指导。
+
+```text
+$scientific-paper-figure
+Create an educational emergency trauma workflow figure for initial assessment.
+Figure type: workflow / paper-style teaching figure.
+Field: emergency medicine and trauma education.
+Core structure: CABCDE sequence with repeated reassessment.
+Process: catastrophic hemorrhage screen, airway assessment, breathing assessment, circulation assessment, disability assessment, exposure and environment control, then loop back to reassessment.
+Output: a clear conceptual pathway for teaching the assessment sequence.
+Visual elements: trauma bay silhouette, numbered pathway, loop arrow for reassessment, small insets for airway, breathing, circulation, neurologic check, and exposure.
+Language: English short labels.
+Aspect ratio: 16:9.
+Style: restrained medical atlas palette, clean paper-figure layout.
+Forbidden elements: no real patient, no hospital logo, no clinician names, no case ID, no drug doses, no procedural commands, no claim that this is clinical guidance.
+Final note: educational use only, not clinical guidance.
+```

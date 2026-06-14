@@ -32,6 +32,18 @@
 
 详细说明见 [Case Study: Anesthesia Mechanisms](docs/anesthesia-mechanisms-case-study.md)。
 
+## 急诊创伤医学教育用例
+
+本仓库也提供一个急诊创伤临床教育示例，展示如何把脱敏后的 Markdown 教学提纲、流程清单或知识库页面转成科研视觉材料：
+
+- `scientific-cover-visual` 生成课程、文章或幻灯片封面主视觉。
+- `scientific-infographic` 生成初始评估、复苏路径、影像与会诊等教学总览图。
+- `scientific-paper-figure` 生成 CABCDE、再评估循环、损伤机制等论文级流程图或机制图。
+
+该用例仅用于教育可视化，不提供临床指导，不应包含可识别患者、机构、真实病例编号、剂量或处置医嘱。
+
+详细说明见 [Use Case: Emergency Trauma Clinical Education](docs/emergency-trauma-clinical-education-use-case.md)。
+
 ## 项目定位
 
 科研图像并不是一个统一任务。
@@ -198,6 +210,7 @@ scientific-visual-skills/
 │   ├── skill-architecture.md
 │   ├── workflow.md
 │   ├── anesthesia-mechanisms-case-study.md
+│   ├── emergency-trauma-clinical-education-use-case.md
 │   └── image-asset-policy.md
 ├── examples/
 │   └── example-prompts.md

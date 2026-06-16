@@ -138,3 +138,8 @@ All three skills avoid:
 - Cheap blue-purple technology backgrounds.
 - Text-heavy layouts that image models cannot render reliably.
 
+## Shared Output Filename Behavior
+
+All three skills should deliver generated images with semantic filenames rather than platform-generated hash names. After image generation and review, the agent should derive the filename from the main visible title when it represents the whole image, fall back to the user-provided topic or title, or summarize the image into a short accurate title when no suitable title exists.
+
+The filename language should match the image language or requested language. Meaningful bilingual titles should be preserved, such as `人体内源性与外源性凝血途径(Coagulation Cascade).png`; English cover titles should remain concise, such as `Immune Evasion.png`. Unsafe filesystem characters should be removed, `.png` should be preserved, and duplicate names should receive a numeric suffix.

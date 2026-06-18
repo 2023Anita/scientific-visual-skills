@@ -12,6 +12,8 @@
 
 默认规则：当用户要求“生成图像”时，Skill 会直接调用 ChatGPT 的生图功能；只有用户明确要求“只要提示词”时，才只输出 prompt。
 
+输出文件命名规则：生成图像后，最终交付文件应使用与图片内容和语言一致的语义化文件名，而不是平台默认的 `ig_...png` 哈希名。例如中文双语图可保存为 `人体内源性与外源性凝血途径(Coagulation Cascade).png`，英文封面图可保存为 `Immune Evasion.png`。如果图片中没有能代表整张图的标题，则根据用户主题或图像内容总结一个最短准确标题。
+
 ![Scientific Visual Skills cover](assets/scientific-visual-skills-cover.png)
 
 ## 麻醉机制案例图库
@@ -137,6 +139,7 @@ $scientific-infographic
 4. 生成结构化图像 prompt。
 5. 调用 ChatGPT 生图工具。
 6. 检查图像是否符合“模块清楚、层级明确、学术可信”的标准。
+7. 用图中主标题、用户主题或简短总结生成语义化 `.png` 文件名并交付。
 
 ### 2. 科研封面主视觉：`scientific-cover-visual`
 
@@ -157,6 +160,7 @@ $scientific-cover-visual
 4. 生成强调主视觉、光影、构图和科研质感的 prompt。
 5. 调用 ChatGPT 生图工具。
 6. 检查是否存在真实期刊仿冒、广告感、医美感或模板感。
+7. 用封面主标题或主题生成语义化 `.png` 文件名并交付。
 
 ### 3. 论文插图：`scientific-paper-figure`
 
@@ -181,6 +185,7 @@ $scientific-paper-figure
 4. 生成机制优先的图像 prompt。
 5. 调用 ChatGPT 生图工具。
 6. 检查研究对象、机制路径、箭头方向、标签和结构可信度。
+7. 用图中主标题、用户主题或简短总结生成语义化 `.png` 文件名并交付。
 
 ## 目录结构
 

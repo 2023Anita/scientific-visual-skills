@@ -18,6 +18,8 @@ Run quality gate
 Generate image with ChatGPT
   ↓
 Review and iterate if needed
+  ↓
+Name and deliver the output file
 ```
 
 ## Step 1: Choose the Skill
@@ -69,6 +71,19 @@ Review against the skill-specific quality gate:
 - Paper figure: mechanism path and structural credibility.
 
 When the first result fails a gate, iterate with one focused correction rather than rewriting the entire prompt.
+
+## Step 7: Name and Deliver the Output File
+
+After the final image is accepted, deliver it with a semantic filename instead of a platform-generated hash such as `ig_...png`.
+
+- Prefer the main visible title when it represents the whole image.
+- If no whole-image title is visible, use the user-provided topic or title.
+- If neither is sufficient, summarize the image into the shortest accurate title.
+- Match the filename language to the image language or requested language.
+- Preserve useful bilingual titles, for example `人体内源性与外源性凝血途径(Coagulation Cascade).png`.
+- Sanitize filesystem-unsafe characters, keep `.png`, and add a numeric suffix only for duplicates, such as `Immune Evasion-2.png`.
+
+For prompt-only output, no image file is created, but the response may include a suggested filename such as `Suggested filename: Immune Evasion.png`.
 
 ## Multi-skill Case Workflow
 

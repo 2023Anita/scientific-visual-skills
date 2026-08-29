@@ -12,9 +12,27 @@ description: Use when creating publication-grade scientific figure images or pro
 ## 默认行为
 
 - 如果用户要“生成图”“做论文插图”“画机制图”“做 graphical abstract”，直接调用可用的 ChatGPT 生图工具生成最终图像。
+- 如果用户明确要求使用 Atlas Cloud，或 ChatGPT 生图工具不可用但已配置 `ATLASCLOUD_API_KEY`，可改用本 Skill 附带的 Atlas Cloud 脚本。Atlas Cloud 是可选 provider，不改变默认的 ChatGPT 生图流程。
 - 只有用户明确说“只要提示词 / prompt / 不要生成图”时，才只输出提示词。
 - 如果生图工具不可用，输出完整可复制提示词，并说明当前无法直接渲染。
 - 不使用真实期刊 logo、真实品牌、真实机构标识。
+
+## 可选 Atlas Cloud Provider
+
+脚本会先从实时模型目录确认模型可用，再提交一次生图任务；生成 `POST` 不会自动重试，状态查询 `GET` 仅做有界重试。完成后会把 Atlas Cloud 返回的图片下载到指定语义化文件名。
+
+```bash
+export ATLASCLOUD_API_KEY="your-api-key"
+python3 skills/scientific-paper-figure/scripts/generate_atlas.py \
+  --prompt "完整的科研机制图提示词" \
+  --aspect-ratio 16:9 \
+  --output "肿瘤免疫逃逸机制.png"
+```
+
+- 默认模型：`google/nano-banana-2-lite/text-to-image-developer`。
+- 可用 `--model` 选择实时 Atlas Cloud 目录中其他已启用的图像模型。
+- 不在命令、日志或仓库文件中写入 API key；只从 `ATLASCLOUD_API_KEY` 读取。
+- 若生成提交失败，不自动重发请求。修正配置或提示词后，由用户明确重新执行。
 
 ## 输出文件命名规则
 
